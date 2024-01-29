@@ -37,7 +37,7 @@
 # Github Project Link
 https://github.com/ahlersml/EnterpriseApplication
 
-# Github Project Link
+# Github Projects Milestones Link
 
 
 # Teams Standup Meeting Link
