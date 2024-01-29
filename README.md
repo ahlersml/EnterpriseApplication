@@ -7,17 +7,18 @@
 # Functional Requirements
   As a [User]\
   I want [Feature]\
-  So that I can [Do Something]
-    -Given [Prerequisite]
-    -When [Series of Steps]
-    -Then [Expected Result]
+  So that I can [Do Something]\
+    -Given [Prerequisite]\
+    -When [Series of Steps]\
+    -Then [Expected Result]\
   \
-  As a [User]
-  I want [Feature]
-  So that I can [Do Something]
-    -Given [Prerequisite]
-    -When [Series of Steps]
-    -Then [Expected Result]
+  \
+  As a [User]\
+  I want [Feature]\
+  So that I can [Do Something]\
+    -Given [Prerequisite]\
+    -When [Series of Steps]\
+    -Then [Expected Result]\
 
 
 # Class Diagram
@@ -28,9 +29,9 @@
 
 # Scrum Roles
 
-**UI Specialist** - 
-**Business Logic and Persistence Specialist** - 
-**Product Owner / Scrum Master / DevOps / GitHubAdministrator** - 
+**UI Specialist** - [name]\
+**Business Logic and Persistence Specialist** - [name]\
+**Product Owner / Scrum Master / DevOps / GitHubAdministrator** - [name]\
 
 
 # Github Project Link
