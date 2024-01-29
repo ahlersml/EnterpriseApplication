@@ -1,10 +1,10 @@
 # Introduction
 
-<br>
-#Storyboard
+\
+# Storyboard
 
-<br>
-#Functional Requirements
+\
+# Functional Requirements
 <p>
   As a [User]
   I want [Feature]
@@ -12,7 +12,7 @@
     -Given [Prerequisite]
     -When [Series of Steps]
     -Then [Expected Result]
-  <br>
+  \
   As a [User]
   I want [Feature]
   So that I can [Do Something]
@@ -21,13 +21,13 @@
     -Then [Expected Result]
 </p>
 
-<br>
+\
 # Class Diagram
 
-<br>
+\
 # JSON Schema
 
-<br>
+\
 #Scrum Roles
 <p>
   **UI Specialist** - 
@@ -35,11 +35,11 @@
   **Product Owner / Scrum Master / DevOps / GitHubAdministrator** - 
 </p>
 
-<br>
+\
 # Github Project Link
 
-<br>
+\
 # Github Project Link
 
-<br>
+\
 # Teams Standup Meeting Link
