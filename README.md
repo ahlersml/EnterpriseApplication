@@ -5,8 +5,8 @@
 
 
 # Functional Requirements
-  As a [User]
-  I want [Feature]
+  As a [User]\
+  I want [Feature]\
   So that I can [Do Something]
     -Given [Prerequisite]
     -When [Series of Steps]
