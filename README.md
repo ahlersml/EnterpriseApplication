@@ -15,8 +15,8 @@
     <br>
   * Given I am logged in and on the recipe management page,
   * When I try to add a recipe without filling in the mandatory fields,
-  * Then I should receive an error message prompting me to complete all required information.  <br>
-
+  * Then I should receive an error message prompting me to complete all required information.
+<br>
   
   As a User,  <br>
   I want to edit an existing recipe,  <br>
@@ -32,7 +32,7 @@
   * Given I am logged in and viewing a specific recipe,
   * When I click on the "Delete" button and modify the recipe details,
   * Then the recipe should be removed from the database, and i should see a success message.  <br>
-  \
+  
 
 # Class Diagram
 
