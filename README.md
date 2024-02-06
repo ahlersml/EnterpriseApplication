@@ -7,7 +7,7 @@
 # Functional Requirements
   As a User,\
   I want to add a new recipe,\
-  So that I can store and share my favorite recipes.\
+  So that I can store and share my favorite recipes.
   * Given I am logged in and on the recipe managment page,\
   * When I fill in the required fields with valid information and click "Add Recipe",\
   * Then the new recipe should be added to the database, and I should see a success message.\
