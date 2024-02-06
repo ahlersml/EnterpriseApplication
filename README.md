@@ -23,8 +23,8 @@
   So that I can update my recipes with new information.
   * Given I am logged in and viewing a specific recipe,
   * When I click on the "edit" button and modify the recipe details,
-  * Then the changes should be saved in the database, and I should see a confirmation message.  <br>
-
+  * Then the changes should be saved in the database, and I should see a confirmation message.
+<br>
   
   As a User,  <br>
   I want to delete a recipe,  <br>
