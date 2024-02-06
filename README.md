@@ -15,6 +15,7 @@
   * Given I am logged in and on the recipe management page,\
   * When I try to add a recipe without filling in the mandatory fields,\
   * Then I should receive an error message prompting me to complete all required information.\
+
   \
   As a User,\
   I want to edit an existing recipe,\
@@ -22,6 +23,7 @@
   * Given I am logged in and viewing a specific recipe,\
   * When I click on the "edit" button and modify the recipe details,\
   * Then the changes should be saved in the database, and I should see a confirmation message.\
+
   \
   As a User,\
   I want to delete a recipe,\
