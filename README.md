@@ -12,8 +12,8 @@
   * When I fill in the required fields with valid information and click "Add Recipe",
   * Then the new recipe should be added to the database, and I should see a success message.
   <br/>
-  * Given I am logged in and on the recipe management page,
-  * When I try to add a recipe without filling in the mandatory fields,
+  * Given I am logged in and on the recipe management page,\
+  * When I try to add a recipe without filling in the mandatory fields,\
   * Then I should receive an error message prompting me to complete all required information.
 
    \
