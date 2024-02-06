@@ -32,7 +32,7 @@
   * Given I am logged in and viewing a specific recipe,
   * When I click on the "Delete" button and modify the recipe details,
   * Then the recipe should be removed from the database, and i should see a success message.  <br>
-  
+<br>  
 
 # Class Diagram
 
