@@ -25,7 +25,7 @@
   * When I click on the "edit" button and modify the recipe details,
   * Then the changes should be saved in the database, and I should see a confirmation message.  <br>
 
-  <br>
+  
   As a User,  <br>
   I want to delete a recipe,  <br>
   So that I can remove recipes I no longer need.
