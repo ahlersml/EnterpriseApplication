@@ -80,8 +80,9 @@ Welcome to RecipeEase, your ultimate culinary companion! Whether you are a seaso
 # Scrum Roles
 
 **UI Specialist** - Robert Brown Jr. <br>
-**Business Logic and Persistence Specialist** - [name]  <br>
-**Product Owner / Scrum Master / DevOps / GitHubAdministrator** - [name]  <br>
+**Business Logic and Persistence Specialist** - Chris Klanderman  <br>
+**Product Owner / Scrum Master / DevOps / GitHubAdministrator** - Michael Ahlers  <br>
+**Backend Development** - Denis Maksimov  <br>
 
 
 # Github Project Link
