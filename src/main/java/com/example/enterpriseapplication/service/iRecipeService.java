@@ -9,6 +9,4 @@ public interface iRecipeService {
      * @return the matching recipe, or null if no matches found
      */
     Recipe fetchById(int recipeId);
-
-    Recipe deleteById(int givenId);
 }
