@@ -3,7 +3,7 @@ Welcome to RecipeEase, your ultimate culinary companion! Whether you are a seaso
 
 # Storyboard
 ![Home](Images/StoryboardScreenOne.jpg)  <br>
-![Item Screen](Images/StoryboardScreenTwo.jpg)
+![Item Screen](Images/StoryboardScreenTwo.jpg) <br>
 
 # Functional Requirements
   As a User,  <br>
@@ -36,7 +36,7 @@ Welcome to RecipeEase, your ultimate culinary companion! Whether you are a seaso
 <br>  
 
 # Class Diagram
-![ClassDiagram](Images/ClassDiagram.png)
+![ClassDiagram](Images/ClassDiagram.png) <br>
 
 # JSON Schema
 {  <br>
