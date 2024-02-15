@@ -1,4 +1,3 @@
-test
 # Introduction
 Welcome to RecipeEase, your ultimate culinary companion! Whether you are a seasoned chef or a kitchen novice, RecipeEase empowers you to effortlessly organize, store, and share your favorite recipes. From mouthwatering mains to delectable deserts, our intuitive platform allows you to input recipes with ease, including detailed ingredients and step-by-step directions. Say goodbye to scattered recipe cards and hello to a streamlined cooking experience. Join our community today and unlock the full potential of your kitchen creativity with RecipeEase!
 
