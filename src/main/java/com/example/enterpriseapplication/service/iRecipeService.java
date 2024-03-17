@@ -2,7 +2,7 @@ package com.example.enterpriseapplication.service;
 
 import com.example.enterpriseapplication.dto.Recipe;
 
-public interface iRecipeService {
+public interface IRecipeService {
     /**
      * Fetch a recipe with a given ID.
      * @param recipeId a unique identifier for a recipe

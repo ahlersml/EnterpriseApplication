@@ -3,11 +3,8 @@ package com.example.enterpriseapplication.service;
 import com.example.enterpriseapplication.dto.Recipe;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Component
-public class RecipeServiceStub implements iRecipeService{
+public class RecipeServiceStub implements IRecipeService{
     @Override
     public Recipe fetchById(int recipeId) {
 
