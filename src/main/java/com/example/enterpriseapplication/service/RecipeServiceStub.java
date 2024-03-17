@@ -1,13 +1,15 @@
 package com.example.enterpriseapplication.service;
 
+import com.example.enterpriseapplication.dao.IRecipeDAO;
 import com.example.enterpriseapplication.dto.Recipe;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+@Service
+public class RecipeServiceStub implements IRecipeService {
+    @Autowired
+    private IRecipeDAO recipeDAO;
 
-@Component
-public class RecipeServiceStub implements iRecipeService{
     @Override
     public Recipe fetchById(int recipeId) {
 
@@ -36,5 +38,8 @@ public class RecipeServiceStub implements iRecipeService{
         return null;
     }
 
-
+    @Override
+    public Recipe save(Recipe recipe) throws Exception {
+        return recipeDAO.save(recipe);
+    }
 }

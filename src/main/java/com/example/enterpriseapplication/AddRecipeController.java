@@ -6,30 +6,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.enterpriseapplication.dto.Recipe;
-import com.example.enterpriseapplication.service.RecipeService;
+import com.example.enterpriseapplication.service.IRecipeService;
 
 @Controller
 @RequestMapping("/recipes")
 public class AddRecipeController {
 
-    private final RecipeService recipeService;
+    @Autowired
+    IRecipeService recipeService;
 
     @Autowired
-    public AddRecipeController(RecipeService recipeService) {
+    public AddRecipeController(IRecipeService recipeService) {
         this.recipeService = recipeService;
     }
 
     @PostMapping("/add")
     public String addRecipe(@RequestParam("recipeName") String recipeName,
                             @RequestParam("ingredients") String ingredients,
-                            @RequestParam("description") String description) {
+                            @RequestParam("description") String description) throws Exception {
         Recipe recipe = new Recipe();
         recipe.setRecipeName(recipeName);
         recipe.setRecipeIngredients(parseIngredients(ingredients));
         recipe.setRecipeSteps(parseSteps(description));
 
         // Call service method to save the recipe
-        recipeService.saveRecipe(recipe);
+        recipeService.save(recipe);
 
         // Redirect to a confirmation page
         return "redirect:/recipes/confirmation";

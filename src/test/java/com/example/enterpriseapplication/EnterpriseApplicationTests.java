@@ -1,7 +1,7 @@
 package com.example.enterpriseapplication;
 
 import com.example.enterpriseapplication.dto.Recipe;
-import com.example.enterpriseapplication.service.iRecipeService;
+import com.example.enterpriseapplication.service.IRecipeService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class EnterpriseApplicationTests {
 
 	@Autowired
-	private iRecipeService recipeService;
+	private IRecipeService recipeService;
 	private Recipe recipe;
 	@Test
 	void contextLoads() {
