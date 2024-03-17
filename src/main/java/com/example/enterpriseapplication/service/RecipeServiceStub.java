@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RecipeServiceStub implements IRecipeService {
-    @Autowired
-    private IRecipeDAO recipeDAO;
+    //@Autowired
+    //private IRecipeDAO recipeDAO;
 
     @Override
     public Recipe fetchById(int recipeId) {
@@ -40,6 +40,7 @@ public class RecipeServiceStub implements IRecipeService {
 
     @Override
     public Recipe save(Recipe recipe) throws Exception {
-        return recipeDAO.save(recipe);
+        //return recipeDAO.save(recipe);
+        return null;
     }
 }
