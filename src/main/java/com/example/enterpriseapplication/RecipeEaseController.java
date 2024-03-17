@@ -1,38 +1,45 @@
 package com.example.enterpriseapplication;
 
 import com.example.enterpriseapplication.dto.Recipe;
-import org.apache.coyote.Response;
-import org.springframework.context.annotation.ComponentScan;
+import com.example.enterpriseapplication.service.RecipeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
+@RequestMapping("/recipe")
 public class RecipeEaseController {
 
-    @RequestMapping("/")
-    public String index(){
-        return "home";
-    }
-    @GetMapping("/recipe")
-    public ResponseEntity fetchAllRecipes(){
-        return new ResponseEntity(HttpStatus.OK);
+    private final RecipeService recipeService;
+
+    public RecipeEaseController(RecipeService recipeService) {
+        this.recipeService = recipeService;
     }
 
-    @GetMapping("/recipe/{id}/")
-    public ResponseEntity fetchRecipeById(@PathVariable("id") String id){
-        return new ResponseEntity(HttpStatus.OK);
+    @GetMapping
+    public ResponseEntity<List<Recipe>> fetchAllRecipes(){
+        List<Recipe> recipes = recipeService.getAllRecipes();
+        return new ResponseEntity<>(recipes, HttpStatus.OK);
     }
 
-    @PostMapping(value="/recipe", consumes="application/json", produces="application/json")
-    public Recipe createRecipe(@RequestBody Recipe recipe){
-        return recipe;
+    @GetMapping("/{id}")
+    public ResponseEntity<Recipe> fetchRecipeById(@PathVariable("id") String id){
+        Recipe recipe = recipeService.getRecipeById(id);
+        return new ResponseEntity<>(recipe, HttpStatus.OK);
     }
 
-    @DeleteMapping("/recipe/{id}/")
-    public ResponseEntity deleteRecipe(@PathVariable("id") String id){
-        return new ResponseEntity(HttpStatus.OK);
+    @PostMapping(consumes="application/json", produces="application/json")
+    public ResponseEntity<Recipe> createRecipe(@RequestBody Recipe recipe){
+        Recipe createdRecipe = recipeService.createRecipe(recipe);
+        return new ResponseEntity<>(createdRecipe, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteRecipe(@PathVariable("id") String id){
+        recipeService.deleteRecipe(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }
