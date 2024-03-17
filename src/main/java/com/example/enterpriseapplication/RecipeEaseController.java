@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class RecipeEaseController {
 
     @RequestMapping("/")
-    public String index(){
+    public String index(){  
         return "home";
     }
     @GetMapping("/recipe")
