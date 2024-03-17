@@ -1,21 +1,19 @@
 package com.example.enterpriseapplication;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.enterpriseapplication.dto.Recipe;
-import com.example.enterpriseapplication.service.RecipeService;
+import com.example.enterpriseapplication.service.IRecipeService;
 
 @Controller
 @RequestMapping("/recipes")
 public class AddRecipeController {
 
-    private final RecipeService recipeService;
+    private final IRecipeService recipeService;
 
-    @Autowired
-    public AddRecipeController(RecipeService recipeService) {
+    public AddRecipeController(IRecipeService recipeService) {
         this.recipeService = recipeService;
     }
 

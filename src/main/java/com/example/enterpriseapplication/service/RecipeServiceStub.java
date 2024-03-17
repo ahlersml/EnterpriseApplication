@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class RecipeServiceStub implements IRecipeService{
+    private Recipe savedRecipe;
+
     @Override
     public Recipe fetchById(int recipeId) {
 
@@ -33,5 +35,11 @@ public class RecipeServiceStub implements IRecipeService{
         return null;
     }
 
-
+    @Override
+    public void saveRecipe(Recipe recipe) {
+        this.savedRecipe = recipe;
+    }
+    public Recipe getSavedRecipe() {
+        return savedRecipe;
+    }
 }
