@@ -6,13 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Add Recipe</title>
 </head>
-<nav>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="AddRecipe.html">Add Recipe</a></li>
-    </ul>
-</nav>
 <body>
+<div th:replace="fragments/navbar :: navbar"></div>
 <h1>Add Recipe</h1>
 <form action="AddRecipeServlet" method="post">
     <label for="recipeName">Recipe Name:</label>
