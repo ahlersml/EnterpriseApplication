@@ -26,8 +26,8 @@ public class AddRecipeController {
                             @RequestParam("description") String description) throws Exception {
         Recipe recipe = new Recipe();
         recipe.setRecipeName(recipeName);
-        recipe.setRecipeIngredients(splitIngredientsIntoArray(ingredients));
-        recipe.setRecipeSteps(splitDescriptionIntoSteps(description));
+        recipe.setRecipeIngredients(parseIngredients(ingredients));
+        recipe.setRecipeSteps(parseSteps(description));
 
         // Call service method to save the recipe
         recipeService.save(recipe);
@@ -36,11 +36,11 @@ public class AddRecipeController {
         return "redirect:/recipes/confirmation";
     }
 
-    private String[] splitIngredientsIntoArray(String ingredients) {
+    private String[] parseIngredients(String ingredients) {
         return ingredients.split("\\r?\\n");
     }
 
-    private String[] splitDescriptionIntoSteps(String description) {
+    private String[] parseSteps(String description) {
         return description.split("\\r?\\n");
     }
 }
