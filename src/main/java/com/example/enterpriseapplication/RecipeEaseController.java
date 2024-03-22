@@ -15,6 +15,11 @@ public class RecipeEaseController {
     public String index(){
         return "home";
     }
+
+    @RequestMapping("/addRecipe")
+    public String addRecipe(){
+        return "AddRecipe";
+    }
     @GetMapping("/recipe")
     public ResponseEntity fetchAllRecipes(){
         return new ResponseEntity(HttpStatus.OK);
