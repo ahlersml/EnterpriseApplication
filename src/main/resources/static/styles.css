@@ -54,3 +54,29 @@ nav{
 body{
     background-color: #4f4364;
 }
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
