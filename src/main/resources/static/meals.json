@@ -1,0 +1,26 @@
+[
+  {
+    "meal": "Meat",
+    "ingredients": [
+      { "item": "cabbage", "quantity": 2 },
+      { "item": "carrot", "quantity": 3 },
+      { "item": "potato", "quantity": 4 }
+    ]
+  },
+  {
+    "meal": "Fish0",
+    "ingredients": [
+      { "item": "lettuce", "quantity": 1 },
+      { "item": "tomato", "quantity": 2 },
+      { "item": "onion", "quantity": 1 }
+    ]
+  },
+  {
+    "meal": "Fish1",
+    "ingredients": [
+      { "item": "lettuce", "quantity": 1 },
+      { "item": "tomato", "quantity": 2 },
+      { "item": "onion", "quantity": 1 }
+    ]
+  }
+]
