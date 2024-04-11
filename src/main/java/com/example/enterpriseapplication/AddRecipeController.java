@@ -30,11 +30,10 @@ public class AddRecipeController {
         recipe.setRecipeSteps(parseSteps(description));
 
         // Call service method to save the recipe
-//        recipeService.save(recipe);
+        recipeService.save(recipe);
 
         // Redirect to a confirmation page
-//        return "redirect:/recipes/confirmation";
-        return null;
+        return "redirect:/recipes/confirmation";
     }
 
     private String[] parseIngredients(String ingredients) {

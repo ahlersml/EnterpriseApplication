@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Add Recipe</title>
-    <script src="RecipeAdder.js"></script>
 </head>
 <div th:replace="fragments/navbar :: navbar"></div>
 <body>
 <h1>Add Recipe</h1>
-<form >
+<form action="AddRecipeServlet" method="post">
     <label for="recipeName">Recipe Name:</label>
     <input type="text" id="recipeName" name="recipeName" required>
 
-    <label for="ingredients">Ingredients (Separate ingredients using a "," and a space input):</label>
+    <label for="ingredients">Ingredients:</label>
     <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea>
 
     <label for="description">Description:</label>
     <textarea id="description" name="description" rows="4" cols="50" required></textarea>
 
-    <a >
-        <button type="submit" onclick="createArrayOfObjectsFromText()">Add Recipe</button>
+    <a href="recipeAdded">
+        <button type="submit">Add Recipe</button>
     </a>
 </form>
 </body>
