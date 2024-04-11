@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         headers: myHeaders,
         redirect: "follow"
     };
-    fetch("http://localhost:8181/api/meals", requestOptions)
+    fetch("https://sweepster-api.onrender.com/api/meals", requestOptions)
         .then((response) => response.json())
         .then((result) => {
             console.log(result);

@@ -39,7 +39,7 @@ function createArrayOfObjectsFromText() {
             redirect: "follow"
         };
 
-        fetch("http://localhost:8181/api/meals", requestOptions)
+        fetch("https://sweepster-api.onrender.com/api/meals", requestOptions)
             .then((response) => response.text())
             .then((result) => console.log(result))
             .catch((error) => console.error(error));
