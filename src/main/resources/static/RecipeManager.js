@@ -1,31 +1,46 @@
-// Sample data
-const mealsData = [
-    {
-        meal: "Meat",
-        ingredients: [
-            { item: "cabbage", quantity: 2 },
-            { item: "carrot", quantity: 3 },
-            { item: "potato", quantity: 4 }
-        ]
-    },
-    {
-        meal: "Fish",
-        ingredients: [
-            { item: "lettuce", quantity: 1 },
-            { item: "tomato", quantity: 2 },
-            { item: "onion", quantity: 1 }
-        ]
-    },
-    {
-        meal: "Fish",
-        ingredients: [
-            { item: "lettuce", quantity: 1 },
-            { item: "tomato", quantity: 2 },
-            { item: "onion", quantity: 1 }
-        ]
-    }
-];
 
+let mealsData = null
+document.addEventListener('DOMContentLoaded', function() {
+    // // Your code here will execute after the DOM is fully loaded, but before all external resources are loaded
+    // // Sample data
+    // fetch('meals.json')
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         // Do something with the JSON data
+    //         console.log(data);
+    //         mealsData = data
+    //         const urlParams = new URLSearchParams(window.location.search);
+    //         if(urlParams.size >0){
+    //             renderMealWanted(mealsData, getQueryParam());
+    //         }else{
+    //             renderMeals(mealsData);
+    //         }
+    //
+    //         getQueryParam()
+    //     })
+    //     .catch(error => console.error('Error fetching JSON:', error));
+    const myHeaders = new Headers();
+    myHeaders.append("x-master-key", "your_master_key");
+
+    const requestOptions = {
+        method: "GET",
+        headers: myHeaders,
+        redirect: "follow"
+    };
+    fetch("http://localhost:8181/api/meals", requestOptions)
+        .then((response) => response.json())
+        .then((result) => {
+            console.log(result);
+            mealsData = result
+            const urlParams = new URLSearchParams(window.location.search);
+            if(urlParams.size >0){
+                renderMealWanted(mealsData, getQueryParam());
+            }else{
+                renderMeals(mealsData);
+            }
+        })
+        .catch((error) => console.error(error));
+});
 // Function to generate HTML for a meal
 function generateMealHTML(meal) {
     let html = `<h2 onclick="changeDisplay('${meal.meal}')">${meal.meal}</h2>`;
@@ -92,14 +107,5 @@ function renderMealWanted(meals, mealWanted) {
     // const mealHTML = generateMealWantedHTML(mealWanted);
     // mealIngredientsElement.innerHTML += mealHTML;
 }
-const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.size >0){
-    renderMealWanted(mealsData, getQueryParam());
-}else{
-    renderMeals(mealsData);
-}
-// Render meals
 
-// Render meals
 
-getQueryParam()
