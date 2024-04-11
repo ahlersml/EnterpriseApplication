@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Add Recipe</title>
+    <script src="RecipeAdder.js"></script>
 </head>
-<nav>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="AddRecipe.html">Add Recipe</a></li>
-    </ul>
-</nav>
+<div th:replace="fragments/navbar :: navbar"></div>
 <body>
 <h1>Add Recipe</h1>
-<form action="AddRecipeServlet" method="post">
+<form >
     <label for="recipeName">Recipe Name:</label>
-    <input type="text" id="recipeName" name="recipeName" required><br><br>
+    <input type="text" id="recipeName" name="recipeName" required>
 
-    <label for="ingredients">Ingredients:</label><br>
-    <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+    <label for="ingredients">Ingredients (Separate ingredients using a "," and a space input):</label>
+    <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea>
 
-    <label for="description">Description:</label><br>
-    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
 
-    <a href="RecipeAdded.html">
-        <button type="submit">Add Recipe</button>
+    <a >
+        <button type="submit" onclick="createArrayOfObjectsFromText()">Add Recipe</button>
     </a>
 </form>
 </body>
