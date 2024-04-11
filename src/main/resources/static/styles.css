@@ -39,18 +39,3 @@ nav ul li{
     margin-left: 20px;
 }
 
-nav ul li a{
-    display: inline-block;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav{
-    background-color: #788c91;
-    padding: 20px;
-}
-
-body{
-    background-color: #4f4364;
-}
