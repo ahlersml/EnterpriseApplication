@@ -20,7 +20,7 @@ function createArrayOfObjectsFromText() {
             "ingredients": resultArray,
             "description": description
         })
-        var result = {
+        result = {
             "meal": name,
             "ingredients": resultArray,
             "description": description
@@ -35,7 +35,7 @@ function createArrayOfObjectsFromText() {
         const requestOptions = {
             method: "POST",
             headers: myHeaders,
-            body: JSON.stringify(result),
+            body: raw,
             redirect: "follow"
         };
 
