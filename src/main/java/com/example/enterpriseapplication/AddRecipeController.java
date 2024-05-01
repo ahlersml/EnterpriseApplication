@@ -12,7 +12,6 @@ import com.example.enterpriseapplication.service.IRecipeService;
 @RequestMapping("/recipes")
 public class AddRecipeController {
 
-    @Autowired
     IRecipeService recipeService;
 
     @Autowired
