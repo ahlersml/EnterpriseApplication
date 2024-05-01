@@ -3,14 +3,14 @@ function createArrayOfObjectsFromText() {
     let text = document.getElementById('ingredients').value
     let name = document.getElementById('recipeName').value
     let description = document.getElementById('description').value
-    var samples = text.split(", ");
+    const samples = text.split(", ");
 
     // Create an array to store objects
-    var resultArray = [];
+    const resultArray = [];
 
     // Iterate through the samples and create objects with "item" key
     samples.forEach(function(sample) {
-        var obj = { "item": sample , "quantity": 1 };
+        const obj = { "item": sample , "quantity": 1 };
         resultArray.push(obj);
     });
 
@@ -20,7 +20,7 @@ function createArrayOfObjectsFromText() {
             "ingredients": resultArray,
             "description": description
         })
-        var result = {
+        const result = {
             "meal": name,
             "ingredients": resultArray,
             "description": description
@@ -29,8 +29,6 @@ function createArrayOfObjectsFromText() {
         const myHeaders = new Headers();
         myHeaders.append("x-master-key", "your_master_key");
         myHeaders.append("Content-Type", "application/json");
-
-        const raw = JSON.stringify(result);
 
         const requestOptions = {
             method: "POST",

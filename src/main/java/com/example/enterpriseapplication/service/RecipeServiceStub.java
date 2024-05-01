@@ -1,8 +1,6 @@
 package com.example.enterpriseapplication.service;
 
-import com.example.enterpriseapplication.dao.IRecipeDAO;
 import com.example.enterpriseapplication.dto.Recipe;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
