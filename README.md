@@ -32,7 +32,7 @@ I want to delete a recipe,  <br>
 So that I can remove recipes I no longer need.
 * **Given** I am logged in and viewing a specific recipe,
 * **When** I click on the "Delete" button and modify the recipe details,
-* **Then** the recipe should be removed from the database, and i should see a success message.  <br>
+* **Then** the recipe should be removed from the database, and I should see a success message.  <br>
   <br>
 
 # Class Diagram
@@ -86,7 +86,7 @@ So that I can remove recipes I no longer need.
 **Backend Development** - Denis Maksimov  <br>
 
 
-# Github Project Link
+# GitHub Project Link
 https://github.com/ahlersml/EnterpriseApplication
 
 # Github Projects Milestones Link

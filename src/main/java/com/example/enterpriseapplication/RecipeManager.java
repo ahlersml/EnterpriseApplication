@@ -29,7 +29,7 @@ public class RecipeManager {
             }.getType();
             return gson.fromJson(reader, listType);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getStackTrace());
             return new ArrayList<>();
         }
     }
@@ -44,7 +44,7 @@ public class RecipeManager {
         try (Writer writer = new FileWriter(JSON_FILE)) {
             gson.toJson(recipes, writer);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getStackTrace());
         }
     }
 
